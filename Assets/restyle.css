@@ -1,0 +1,172 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: 12px;
+    background-image: url(images/artwork.png); 
+    background-attachment: fixed;
+    background-size: cover;
+    display:flexbox;
+}
+
+header {
+    font-size: xx-large;
+    font-weight: bolder;
+    display: block;
+    color:whitesmoke;
+    position: top;
+    background-image: "Assets/images/artwork.png";
+}
+
+nav {
+    display: inline-block;
+    flex-direction: column;
+    list-style-type: none;
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    border: 5px solid black;
+    font-size: x-large;
+}
+
+nav li {
+    display: inline-flex;
+    border-right: black;
+    border: 5px black;
+    border-radius: 10px;
+    padding: 10px;
+}
+nav a {
+    border: 5px solid black;
+    padding: 5px ;
+}
+
+nav a:hover {
+    background-color:black;
+    color:orange;
+    text-decoration: none;
+}
+
+nav a:link { 
+    text-decoration: none; 
+}
+
+nav a:visited { 
+    text-decoration: none; 
+}
+
+nav a:active { 
+    text-decoration: none; 
+}
+
+main {
+    display:block;
+    flex-direction: column;
+    flex-wrap: wrap;  
+}
+
+section {
+    height: 400px;
+    width: 80%;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    display: flexbox;
+    flex-wrap: wrap;
+}
+
+#About-Me img {
+    display: block;
+    float: right;
+    margin-right: 25px;
+    max-height: 300px;
+    padding-left: 25px;
+    padding-bottom: 2em;
+    height: auto;
+}
+
+#Code-Refactor {
+    height: 800px;
+    width: 80%;
+    margin: 30px auto;
+    background-color: black;
+    color: orange;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 1 0 200px;
+}
+
+#Code-Refactor img {
+    display: block;
+    float:right;
+    max-height: 700px;
+    margin-right: 25px;
+    padding-left: 25px;
+    height: auto;
+    
+}
+
+#Scratch-Game img {
+    display: block;
+    float: right;
+    margin-right: 25px;
+    max-height: 300px;
+    padding-left: 25px;
+    height: auto;
+}
+
+#JavaScript-Practice img {
+    display: block;
+    float: right;
+    margin-right: 25px;
+    max-height: 315px;
+    padding-left: 40px;
+}
+
+h2 {
+    color: orange;
+    margin: 10px;
+    padding: 10px;
+    height: 30px;
+    padding-bottom: 2em;
+}
+
+p { 
+    color: whitesmoke;
+    margin: 10px;
+    padding: 10px;
+    height: 10px;
+    font-size:medium;
+}    
+
+#poem {
+    font-style: italic;
+    color:deepskyblue;
+    font-size:medium;
+    margin-top:12em;
+    text-align:center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+@media screen and (max-width:992px) {
+    section { min-height: 700px} 
+    #Code-Refactor { min-height: 950px;} 
+}
+
+@media screen and (max-width:768px) {
+    section { min-height: 700px} 
+}
+
+@media screen and (max-width:576px) {
+   section {min-height:800px ;}
+   #Code-Refactor { min-height: 950px;} 
+   #Code-Refactor img {max-height: 500px;}
+   nav li {display:block;}
+   }
