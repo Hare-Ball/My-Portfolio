@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
+    /*This is included to allow for auto scrolling when the nav links are selected*/ 
 }
 * {
     box-sizing: inherit;
@@ -12,6 +13,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     display:flexbox;
+    /*display:flexbox allows the items to stack and then flex if the size of the window changes*/
 }
 
 header {
@@ -36,6 +38,7 @@ nav {
 
 nav li {
     display: inline-flex;
+    /*I wanted the nav li to stack when the window was at it's smallest*/
     border-right: black;
     border: 5px black;
     border-radius: 10px;
@@ -46,6 +49,7 @@ nav a {
 }
 
 nav a:hover {
+    /*This is how I got the colors to invert when the mouse hovers over the nav options*/
     background-color:black;
     color:orange;
     text-decoration: none;
@@ -64,6 +68,7 @@ nav a:active {
 }
 
 main {
+    /*This is an experiment to try and get the flexing to work for mobile responsiveness*/
     display:block;
     flex-direction: column;
     flex-wrap: wrap;  
@@ -90,6 +95,7 @@ section {
 }
 
 #Code-Refactor {
+    /*This section is an id so that I could match the AC for the first work sample to be larger than everything else*/
     height: 800px;
     width: 80%;
     margin: 30px auto;
@@ -141,16 +147,7 @@ p {
     height: 10px;
     font-size:medium;
 }    
-
-#poem {
-    font-style: italic;
-    color:deepskyblue;
-    font-size:medium;
-    margin-top:12em;
-    text-align:center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-}
-
+/*These media queries are here to allow for breaks in attempt to make the site mobile responsive*/
 @media screen and (max-width:992px) {
     section { min-height: 700px} 
     #Code-Refactor { min-height: 950px;} 
