@@ -93,7 +93,12 @@ h2 {
     padding: 5px;
     color: #0D6EFD;
 }
-#Hare-Picture, #Quote-Translator-Picture, #Weather-Dashboard-Picture, #Password-Generator-Picture {
+#Hare-Picture {
     width: 375px;
     padding: 2%;
+}
+
+#Quote-Translator-Picture, #Weather-Dashboard-Picture, #Password-Generator-Picture {
+    width:500px;
+    padding: 2px;
 }
