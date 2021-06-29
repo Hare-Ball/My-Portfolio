@@ -7,33 +7,44 @@ html {
     box-sizing: inherit;
 }
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font: 12px;
     background-image: url(images/artwork.png); 
     background-attachment: fixed;
     background-size: cover;
     display:flexbox;
+    font-family: 'Noto Serif SC', serif;
+    color:whitesmoke;
     /*display:flexbox allows the items to stack and then flex if the size of the window changes*/
 }
 
 header {
-    font-size: xx-large;
-    font-weight: bolder;
+    text-align: center ;
     display: block;
-    color:whitesmoke;
+    color:black;
     position: top;
     background-image: "Assets/images/artwork.png";
 }
 
+h1 {
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 124px;
+    font-weight: bolder;
+    color:whitesmoke;
+    background: black;
+    text-align: center;
+}
+
 nav {
     display: inline-block;
+    align-items: center;
+    text-align: center;
     flex-direction: column;
     list-style-type: none;
     width: 100%;
-    padding: 10px;
     background-color: orange;
     border: 5px solid black;
+    border-radius: 10px;
     font-size: x-large;
+    margin: 5px;
 }
 
 nav li {
@@ -45,7 +56,10 @@ nav li {
     padding: 10px;
 }
 nav a {
-    padding: 5px ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;    
+    padding: 5px;
+    color: #0D6EFD;
 }
 
 nav a:hover {
@@ -67,100 +81,19 @@ nav a:active {
     text-decoration: none; 
 }
 
-main {
-    /*This is an experiment to try and get the flexing to work for mobile responsiveness*/
-    display:block;
-    flex-direction: column;
-    flex-wrap: wrap;  
-}
-
-section {
-    height: 400px;
-    width: 80%;
-    margin: 30px auto;
-    padding: 10px;
-    background-color: black;
-    border-radius: 10px;
-    display: flexbox;
-}
-
-#About-Me img {
-    display: block;
-    float: right;
-    margin-right: 25px;
-    max-height: 300px;
-    padding-left: 25px;
-    padding-bottom: 2em;
-    height: auto;
-}
-
-#Code-Refactor {
-    /*This section is an id so that I could match the AC for the first work sample to be larger than everything else*/
-    height: 800px;
-    width: 80%;
-    margin: 30px auto;
-    background-color: black;
-    color: orange;
-    border-radius: 10px;
-    padding: 10px;
-    flex: 1 0 200px;
-}
-
-#Code-Refactor img {
-    display: block;
-    float:right;
-    max-height: 700px;
-    margin-right: 25px;
-    padding-left: 25px;
-    height: auto;
-}
-
-#Scratch-Game img {
-    display: block;
-    float: right;
-    margin-right: 25px;
-    max-height: 300px;
-    padding-left: 25px;
-    height: auto;
-}
-
-#JavaScript-Practice img {
-    display: block;
-    float: right;
-    margin-right: 25px;
-    max-height: 300px;
-    padding-left: 40px;
+#About-Me, #Quote-Generator, #Weather-Dashboard, #Password-Generator, #Contact-Me {
+    margin:5px;
+    background-color:black;
+    border-radius: 5px;
 }
 
 h2 {
-    color: orange;
-    margin: 10px;
-    padding: 10px;
-    height: 30px;
-    padding-bottom: 2em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;    
+    padding: 5px;
+    color: #0D6EFD;
 }
-
-p { 
-    color: whitesmoke;
-    margin: 10px;
-    padding: 10px;
-    height: 10px;
-    font-size:medium;
-}    
-/*These media queries are here to allow for breaks in attempt to make the site mobile responsive*/
-@media screen and (max-width:992px) {
-    section { min-height: 700px} 
-    #Code-Refactor { min-height: 950px;} 
+#Hare-Picture {
+    width: 375px;
+    padding: 2%;
 }
-
-@media screen and (max-width:768px) {
-    section { min-height: 700px} 
-}
-
-@media screen and (max-width:576px) {
-   section {min-height:800px ;}
-   #Code-Refactor {min-height: 950px;} 
-   #Code-Refactor img {max-height: 500px;}
-   nav li {display:block;}
-   #JavaScript-Practice img {max: width 375px;}
-   }

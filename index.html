@@ -5,77 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--The next line is included to make the HTMl mobile responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./Assets/restyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 <body>
-   
-    <header>
-        <h1>Robert Hare</h1>
-    </header>
+    <main class = "container">
 
-    <nav>
-        <li><a href="#About-Me">About Me ❔</a></li>
-        <li><a href="#Code-Refactor">My Work 💻</a></li>
-        <li><a href="#Contact-Me">Contact Me 📭</a></li>
-    </nav>
-    <main>
-        <section id="About-Me">
-            <h2>About Me:</h2>
-            <img src="./Assets/images/Palo-Duro-Profile-Pic.jpg" alt="Robert Hare Picture">
-            <p>My name is Robert Hare. I am an aspiring web developer in the Dallas/Fort Worth area.
-                I hold a Bachelor of Arts from Harding University in Searcy, Arkansas.
-                I have also been an educator and public speaker, and have come to believe that everyone can learn and grow.
-                As a life-long learner, I am always trying to learn new things, from music-making to culinary skills, and many things in between.
-                In my spare time, I am an avid poetry connoisseur, which led me to create, host, and produce the Preaching Poetry Podcast.
-                One of my favorite poems is"The Builders" by Henry Wadsworth Longfellow. 
-                His immortal words definitely speak to me as a web developer: 
-                <br> 
-                <br>
-                "Nothing useless is, or low;
-                Each thing in its place is best;
-                And what seems but idle show
-                Strengthens and supports the rest.
-                For the structure that we raise,
-                Time is with materials filled;
-                Our to-days and yesterdays
-                Are the blocks with which we build."
-                <!--I couldn't figure out how to space the p tags in css, so I did it in HTML-->
-            </p>
-            
-        </section>
+        <header>
+            <br>
+            <br>
+            <br>
+            <h1>Robert Hare</h1>
+            <br>
+            <br>
+        </header>
         
-        <section id="Code-Refactor">
-            <h2>Code Refactor for Semantic Language</h2>
-            <a href="https://hare-ball.github.io/Code-Refactor-Accessibility-SEO/">
-                <img src="./Assets/images/Screenshot Refactor.png" alt="Picture of Refactored Horiseon Website">
-            </a>
-            <p>The Horiseon Website has been refactored to match semantic language. I replaced the "divs" with more specific langauge. I also added alternative text to go along with the images to meet accesibility requirements. The CSS has been adjusted to match the new semantic language changes. Click on the picture to follow the link to the website.</p>
-        </section>
-                
-        <section id="Scratch-Game">
-            <h2>Scratch Game</h2>
-            <a href="https://scratch.mit.edu/projects/522159304/">
-                <img src="./Assets/images/Scratch Game.png" alt="Picture of Cheesy Puff Game">
-            </a>
-            <p>Click the picture to play the game! See if you can get 10 cheesy puffs, but watch out for cars!</p>
-        </section>
+    <section class ="row">
+        <nav class = "col-12 justify-content-center">
+            <li><a href="#About-Me">About Me ❔</a></li>
+            <li><a href="#Quote-Generator">My Work 💻</a></li>
+            <li><a href="#Contact-Me">Contact Me 📭</a></li>
+        </nav>
+    </section>
 
-        <section id="JavaScript-Practice">
-            <h2>JavaScript Practice</h2>
-            <a href="https://hare-ball.github.io/JavaScript-Box/">
-                <img src="./Assets/images/Javascript Practice.png" alt="Picture of JavaScript Practice Website">
-            </a>
-            <p>Press the buttons and use Javascript to change the box! Click on the picture to follow the link to the website.</p>
-        </section>
+        <section class ="row">
+            <div class= "col-12 justify-content-center" id="About-Me">
+                <h2>About Me:</h2>
+                <img src="./Assets/images/Palo-Duro-Profile-Pic.jpg" class="img-fluid rounded mx-auto d-block" alt="Robert Hare Profile Picture" id="Hare-Picture">
+                <p>My name is Robert Hare. I am an aspiring web developer in the Dallas/Fort Worth area.
+                    I hold a Bachelor of Arts from Harding University in Searcy, Arkansas and Web Development Certificate from SMU.
+                    In addition to coding, I have also been an educator and public speaker, and have come to believe that everyone can learn and grow.
+                    As a life-long learner, I am always trying to learn new things, from music-making to culinary skills, and many things in between.
+                    In my spare time, I am an avid poetry connoisseur, which led me to create, host, and produce the Preaching Poetry Podcast.
+                    One of my favorite poems is "The Builders" by Henry Wadsworth Longfellow. 
+                    His immortal words inspire me in my work as a web developer: 
+                    <br> 
+                    <br>
+                    "Nothing useless is, or low;
+                    Each thing in its place is best;
+                    And what seems but idle show
+                    Strengthens and supports the rest.
+                    For the structure that we raise,
+                    Time is with materials filled;
+                    Our to-days and yesterdays
+                    Are the blocks with which we build."
+                </p>
+            </div>
+        </section> 
 
-        <section id="#Contact-Me">
-            <h2>Contact Me</h2>
-            <p>Email: robby.hare@gmail.com</p>
-            <p>Phone: 214-681-9734</p>
-        </section>   
+        <section class ="row">
+            <div class= "col-12 justify-content-center" id="Quote-Generator">
+                <h2>Quote Generator/Translator</h2>
+                <p>This was a project that I worked on with two other developers. We wanted to use an API to bring in a randomly generated quote and then use another API to allow the user to translate that quote into the language of their choice. We also decided to utilize local storage so that we can keep the generated quote and translation on the page if the user clicks away to the links in the nav bar or accidenatly closes the page. We have thought of a few different ways to add to this project, including visual asthetics and functionality. We toyed with adding another API to read the quote and translation to the user and other quote APIs so that it is unlikely that a user ever gets a recycled quote. Try it out! </p>
+            </div>
+        </section> 
+
+        <section class ="row">
+            <div class= "col-12 justify-content-center" id="Weather-Dashboard">
+                <h2>Weather Dashboard</h2>
+                <p>This application uses the OpenWeather API to generate detailed weather information for any city searched for by the user. It will also show forecast data for 5 days. I want to add weather icons and locally store search and weather data as well. Check it out!</p>
+            </div>
+        </section> 
+
+        <section class ="row">
+            <div class= "col-12 justify-content-center" id="Password-Generator">
+                <h2>Password Generator</h2>
+                <p>This generator allows the user to give a specific set of conditions and then receive a randomly generated password that meets their desired specifications. Using various functions and conditions, the password can be completely random using vanilla JavaScript. Click the picture to try it!</p>
+            </div>
+        </section> 
+
+        <section class ="row">
+            <div class= "col-12 justify-content-center" id="Contact-Me">
+                <h2>Contact Me</h2>
+                <p>Email: robby.hare@gmail.com</p>
+                <p>Phone: 214-681-9734</p>
+            </div>
+        </section> 
+             
     </main>
       
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
