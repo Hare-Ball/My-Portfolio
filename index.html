@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 <body>
@@ -26,71 +28,85 @@
         </header>
         
     <section class ="row">
-        <nav class = "col-12 justify-content-center">
+        <nav class = "container col-12 justify-content-center">
             <li><a href="#About-Me">About Me ❔</a></li>
             <li><a href="#Quote-Generator">My Work 💻</a></li>
             <li><a href="#Contact-Me">Contact Me 📭</a></li>
         </nav>
     </section>
 
-        <section class ="row">
-            <div class= "col-12 justify-content-center" id="About-Me">
+        <section class ="card">
+            <div class= "container col-12 justify-content-center" id="About-Me">
                 <h2>About Me:</h2>
+                <br>  
                 <img src="./Assets/images/Palo-Duro-Profile-Pic.jpg" class="img-fluid rounded mx-auto d-block" alt="Robert Hare Profile Picture" id="Hare-Picture">
+                <br>
                 <p>My name is Robert Hare. I am an aspiring web developer in the Dallas/Fort Worth area.
-                    I hold a Bachelor of Arts from Harding University in Searcy, Arkansas and Web Development Certificate from SMU.
-                    In addition to coding, I have also been an educator and public speaker, and have come to believe that everyone can learn and grow.
-                    As a life-long learner, I am always trying to learn new things, from music-making to culinary skills, and many things in between.
-                    In my spare time, I am an avid poetry connoisseur, which led me to create, host, and produce the Preaching Poetry Podcast.
-                    One of my favorite poems is "The Builders" by Henry Wadsworth Longfellow. 
-                    His immortal words inspire me in my work as a web developer: 
-                    <br> 
-                    <br>
-                    "Nothing useless is, or low;
-                    Each thing in its place is best;
-                    And what seems but idle show
-                    Strengthens and supports the rest.
-                    For the structure that we raise,
-                    Time is with materials filled;
-                    Our to-days and yesterdays
-                    Are the blocks with which we build."
-                </p>
+                I hold a Bachelor of Arts from Harding University in Searcy, Arkansas and Web Development Certificate from SMU.
+                In addition to being a web developer, I am also an educator and public speaker, and life-long learner.
+                In my spare time, I am an avid poetry connoisseur, which led me to create, host, and produce the Preaching Poetry Podcast.</p>
+                <p>One of my favorite poems is "The Builders" by Henry Wadsworth Longfellow. His immortal words inspire me in my work: </p>    
+                <h3>
+                    <ul>
+                        <li>"Nothing useless is, or low;</li>
+                        <li>Each thing in its place is best;</li>
+                        <li>And what seems but idle show</li>
+                        <li>Strengthens and supports the rest.</li>
+                        <li>For the structure that we raise,</li>
+                        <li>Time is with materials filled;</li>
+                        <li>Our to-days and yesterdays</li>
+                        <li>Are the blocks with which we build."</li>
+                      </ul>
+                </h3>
             </div>
         </section> 
 
-        <section class ="row">
-            <div class= "col-12 justify-content-center" id="Quote-Generator">
+        <section class ="card">
+            <div class= "container col-12 justify-content-center" id="Quote-Generator">
                 <h2>Quote Generator/Translator</h2>
+                <br>
                 <a href="https://hare-ball.github.io/quote_gen_translator/">
                     <img src="./Assets/images/Quote-Translator-Screengrab.png"  class="img-fluid rounded mx-auto d-block" alt="Quote Generator/Translator" id="Quote-Translator-Picture">
                 </a>
+                <br>
                     <p>This was a project that I worked on with two other developers. We wanted to use an API to bring in a randomly generated quote and then use another API to allow the user to translate that quote into the language of their choice. We also decided to utilize local storage so that we can keep the generated quote and translation on the page if the user clicks away to the links in the nav bar or accidenatly closes the page. We have thought of a few different ways to add to this project, including visual asthetics and functionality. We toyed with adding another API to read the quote and translation to the user and other quote APIs so that it is unlikely that a user ever gets a recycled quote. Try it out! </p>
             </div>
         </section> 
 
-        <section class ="row">
-            <div class= "col-12 justify-content-center" id="Weather-Dashboard">
-                <h2>Weather Dashboard</h2>
-                <a href="https://hare-ball.github.io/Weather_Dashboard_Magic_8_Ball/">
-                    <img src="./Assets/images/Weather-Dashboard-Screengrab.png" class="img-fluid rounded mx-auto d-block" alt="Weather Dashboard" id="Weather-Dashboard-Picture">
+        <section class ="card">
+            <div class= "container col-12 justify-content-center" id="Weather-Dashboard">
+                <h2>Note Taker</h2>
+                <br>
+                <a href="https://afternoon-gorge-81555.herokuapp.com/">
+                    <img src="./Assets/images/Note Taker Index.png" class="img-fluid rounded mx-auto d-block" alt="Note Taker Main Page" id="Note-Taker-Index-Picture">
                 </a>
-                    <p>This application uses the OpenWeather API to generate detailed weather information for any city searched for by the user. It will also show forecast data for 5 days. I want to add weather icons and locally store search and weather data as well. Check it out!</p>
+                <br>
+                <a href="https://afternoon-gorge-81555.herokuapp.com/">
+                    <img src="./Assets/images/Note Taker Notes.png" class="img-fluid rounded mx-auto d-block" alt="Note Taker Notes Page" id="Note-Taker-Notes-Picture">
+                </a>
+                <br>
+                    <p>This application uses Node and Express to create a note taking app. You can write, store, and delete notes along different API routes. The code is stored in a GitHub Repo, but is deployed on Heroku. Click on the picture to check it out!</p>
             </div>
         </section> 
 
-        <section class ="row">
-            <div class= "col-12 justify-content-center" id="Password-Generator">
-                <h2>Password Generator</h2>
-                <a href="https://hare-ball.github.io/JavaScript-Password-Generator/">
-                    <img src="./Assets/images/Password-Generator-Screengrab.png" class="img-fluid rounded mx-auto d-block" alt="Password Generator" id="Password-Generator-Picture">
-                </a>
-                    <p>This generator allows the user to give a specific set of conditions and then receive a randomly generated password that meets their desired specifications. Using various functions and conditions, the password can be completely random using vanilla JavaScript. Click the picture to try it!</p>
+        <section class ="card">
+            <div class= "container col-12 justify-content-center" id="Password-Generator">
+                <h2>Employee Database Tracker</h2>
+                <br>
+                <video controls="controls" src="/Assets/videos/MySQL-Database-Tracker-Video.webm" alt="Employee Database Tracker Video" id="video">
+                    Your browser does not support the HTML5 Video element.
+                </video>
+                <br>
+                    <p>This is a command-line application that allows the user to manage an employee database containing characters from the TV show "Parks and Rec" as a demonstration. This application uses Node and multiple npm packages, including ascii-art-table, asciiart-logo, console.table, dotenv, express, inquirer, and mysql2. The video shows you how the Repo is structured and shows you a video of how it works since it doesn't have a front end.</p> 
+                <br>   
+                    <p>Feel free to visit my <span><a href="https://github.com/Hare-Ball/Employee-Tracker-MySQL-CMS">GitHub Repo</a></span>  and install it for yourself</p> 
             </div>
         </section> 
 
-        <section class ="row">
-            <div class= "col-12 justify-content-center" id="Contact-Me">
+        <section class ="card">
+            <div class= "container col-12 justify-content-center" id="Contact-Me">
                 <h2>Contact Me</h2>
+                <br>
                 <p>Email: robby.hare@gmail.com</p>
                 <p>Phone: 214-681-9734</p>
             </div>
