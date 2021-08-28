@@ -6,7 +6,8 @@ My name is Robert Hare and this is my portfolio. This simple portfolio is a vehi
 
 Made with html and css
 
-link:https://hare-ball.github.io/My-Portfolio/
+# Link-To-Deployed-Page
+https://hare-ball.github.io/My-Portfolio/
 
 <img src="./Assets/images/Portfolio Screengrab.png" alt="Portfolio Picture">
 <img src="./Assets/images/Portfolio Screengrab Responsive.png" alt="Portfolio Picture">
