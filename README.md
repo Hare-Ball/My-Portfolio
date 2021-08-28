@@ -1,8 +1,8 @@
-# Web-Dev-Portfolio 💻 :computer: 
+# Web-Dev-Portfolio :computer: 
 
 My name is Robert Hare and this is my portfolio. This simple portfolio is a vehicle to showcase work that I am proud of and skills that I have learned.
 
-# Tech-Used 🔨 :hammer:
+# Tech-Used :hammer:
 
 Made with html and css
 
