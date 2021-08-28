@@ -1,8 +1,25 @@
-# My-Portfolio
+# Web-Dev-Portfolio :computer: 
 
-This is a portfolio to demonstarate various HTML and CSS skills that I have been learning. It includes various features including autoscrolling when you click on the navigation links and mobile responsiveness.
+My name is Robert Hare and this is my portfolio. This simple portfolio is a vehicle to showcase work that I am proud of and skills that I have learned.
 
-link:https://hare-ball.github.io/My-Portfolio/
+# Tech-Used :hammer:
+
+Made with html and css
+
+# Link-To-Deployed-Page
+https://hare-ball.github.io/My-Portfolio/
+
+# Screenshots
 
 <img src="./Assets/images/Portfolio Screengrab.png" alt="Portfolio Picture">
 <img src="./Assets/images/Portfolio Screengrab Responsive.png" alt="Portfolio Picture">
+
+# License
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
+*This is application is covered under the MIT license. Follow the link for more information about the license.
+*https://opensource.org/licenses/MITT
+
+# Questions?
+* https://github.com/Hare-Ball
+* Email me with additional questions at: email@email.com
